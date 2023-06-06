@@ -1,0 +1,24 @@
+.flex-container{
+    display: flex;
+    background-color: bisque;
+    flex-direction: row;
+
+}
+
+.flex-container div{
+    background-color: brown;
+    margin: 5px;
+    color: white;
+    width: 100px;
+}
+
+@media (max-width: 600px){
+    .flex-container{
+        flex-direction: column;
+       }
+       .flex-container div{
+          flex-basis: 100%;
+
+       }
+
+}

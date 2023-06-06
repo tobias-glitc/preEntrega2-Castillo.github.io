@@ -1,0 +1,12 @@
+.footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    background-color: skyblue;
+    padding: 20px;
+  }
+  
+  .footer-item {
+    text-align: center;
+  }
+
