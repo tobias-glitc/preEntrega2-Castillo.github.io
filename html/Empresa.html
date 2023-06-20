@@ -1,107 +1,354 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="../css/stilo.Empresa.css">
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../sass/main.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <title>Tienda de herrmientas Stanley</title>
+ 
 </head>
- <body>
-     <header>
-      <header>
-         <div class="navbar navbar-expand-lg navbar-dark bg-dark">
-             <div class="container">
-                 <a href="#" class="navbar-brand">
-                     <strong>Tienda de Herramientas Stanley</strong>
-                 </a>
-                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
-                     <span class="navbar-toggler-icon"></span>
-                 </button>
-                 <div class="collapse navbar-collapse" id="navbarHeader">
-                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                         <li class="nav-item">
-                           <li><a href="../index.HTML" class="nav-link ">Inicio</a></li>
-                           <li><a href="catalogo.html" class="nav-link ">Catalogo</a></li>
-                           <li><a href="Empresa.html"  class="nav-link ">Empresa</a></li>
-                           <li><a href="redes.html"    class="nav-link ">Redes</a></li>          
-                     </ul>
-                     <a href="carrito.php" class="btn btn-primary">Carrito</a>
-                 </div>
-             </div>
-         </div>
-     </header>
+<body>
+    <header>
+        <div class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a href="#" class="navbar-brand">
+                    <strong>Tienda de Herramientas Stanley</strong>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+               
+                <div class="collapse navbar-collapse" id="navbarHeader">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                          <li><a href="../index.html" class="nav-link">Inicio</a></li>
+                          <li><a href="./catalogo.html" class="nav-link ">Catalogo</a></li>
+                          <li><a href="../html/empresa.html" class="nav-link ">Empresa</a></li>           
+                    </ul>
+                    <a href="carrito.php" class="btn btn-primary">Carrito</a>
+                </div>
+            </div>
+        </div>
     </header>
-    <h2><strong>Aqui puedes ver algunas de nuestras herramientas en accion!</strong></h2>
-    <div class="container-2">
-      <div class="item"><img src="data:image/jpeg;base64,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" alt="Imagen 1"></div>
-      <div class="item"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuNd0GLs2EWyxBGtLwinuweEoCR_Z3Oh-q2Q&usqp=CAU" alt="Imagen 2"></div>
-      <div class="item"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnPn5y5JIoXsNeFF6qmxJy5eBj7bylQgfQVw&usqp=CAU" alt="Imagen 3"></div>
-      <div class="item"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSghJR9UUwCk50l1lZFCb4XIOOntPjkC4UyMX9_3Qy2aQ2I08ajPSoZfNsV34ne2KGNFI&usqp=CAU" alt="Imagen 4"></div>
-      <div class="item"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsCBLMmILJ-apOzR0VqRtcX4NmVmFWnhJFRQ&usqp=CAU" alt="Imagen 4"></div>
-      <div class="item"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuyukHgePsuGiDCFdkEbmBKNaxayRWv-9oTg&usqp=CAU" alt="Imagen 4"></div>
-      <div class="item"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ45GS0iQEA1BYjqR-jHE4Xw142lJhm_ZAqhg&usqp=CAU" alt="Imagen 4"></div>
-      <div class="item"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRLlqLY806yEbTSPessmKL9mhpzSiljl7RsA&usqp=CAU" alt="Imagen 4"></div>
-      <div class="item"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdRCuSLLZhl-iFlvsMRFHiCXsVSs_iXIP8pg&usqp=CAU" alt="Imagen 4"></div>
-      <div class="item"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBoX1scXxzi46OKdgrBuhVv9BFFQ2Iz5pSpA&usqp=CAU" alt="Imagen 4"></div>
-      <div class="item"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_an-OP19ADFJUHDV8TivGVWNQcK5GIyYJxUnVJKKRB2MRBn50P_Ko53TblMzFoie1Es0&usqp=CAU" alt="Imagen 4"></div>
-      <div class="item"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkDNJz9UFjb8gZmItW0Ku-FOzRwF_9GxHIOQ&usqp=CAU" alt="Imagen 4"></div>
-      <div class="item"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWKsJT8mHctg6L8VhTOLiQ3oojyZaMdW6CIA&usqp=CAU" alt="Imagen 4"></div>
-   </div>
+
+    <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
+        <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center"
+                id="bd-theme"
+                type="button"
+                aria-expanded="false"
+                data-bs-toggle="dropdown"
+                aria-label="Toggle theme (auto)">
+          <svg class="bi my-1 theme-icon-active" width="1em" height="1em"><use href="#circle-half"></use></svg>
+          <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
+        </button>
+        <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text">
+          <li>
+            <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
+              <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em"><use href="#sun-fill"></use></svg>
+              Light
+              <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+            </button>
+          </li>
+          <li>
+            <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
+              <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em"><use href="#moon-stars-fill"></use></svg>
+              Dark
+              <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+            </button>
+          </li>
+          <li>
+            <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto" aria-pressed="true">
+              <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em"><use href="#circle-half"></use></svg>
+              Auto
+              <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+            </button>
+          </li>
+        </ul>
+      </div>
+          
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+    <symbol id="bootstrap" viewBox="0 0 118 94">
+      <title>Bootstrap</title>
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z"></path>
+    </symbol>
+    <symbol id="home" viewBox="0 0 16 16">
+      <path d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5z"/>
+    </symbol>
+    <symbol id="speedometer2" viewBox="0 0 16 16">
+      <path d="M8 4a.5.5 0 0 1 .5.5V6a.5.5 0 0 1-1 0V4.5A.5.5 0 0 1 8 4zM3.732 5.732a.5.5 0 0 1 .707 0l.915.914a.5.5 0 1 1-.708.708l-.914-.915a.5.5 0 0 1 0-.707zM2 10a.5.5 0 0 1 .5-.5h1.586a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 10zm9.5 0a.5.5 0 0 1 .5-.5h1.5a.5.5 0 0 1 0 1H12a.5.5 0 0 1-.5-.5zm.754-4.246a.389.389 0 0 0-.527-.02L7.547 9.31a.91.91 0 1 0 1.302 1.258l3.434-4.297a.389.389 0 0 0-.029-.518z"/>
+      <path fill-rule="evenodd" d="M0 10a8 8 0 1 1 15.547 2.661c-.442 1.253-1.845 1.602-2.932 1.25C11.309 13.488 9.475 13 8 13c-1.474 0-3.31.488-4.615.911-1.087.352-2.49.003-2.932-1.25A7.988 7.988 0 0 1 0 10zm8-7a7 7 0 0 0-6.603 9.329c.203.575.923.876 1.68.63C4.397 12.533 6.358 12 8 12s3.604.532 4.923.96c.757.245 1.477-.056 1.68-.631A7 7 0 0 0 8 3z"/>
+    </symbol>
+    <symbol id="table" viewBox="0 0 16 16">
+      <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm15 2h-4v3h4V4zm0 4h-4v3h4V8zm0 4h-4v3h3a1 1 0 0 0 1-1v-2zm-5 3v-3H6v3h4zm-5 0v-3H1v2a1 1 0 0 0 1 1h3zm-4-4h4V8H1v3zm0-4h4V4H1v3zm5-3v3h4V4H6zm4 4H6v3h4V8z"/>
+    </symbol>
+    <symbol id="people-circle" viewBox="0 0 16 16">
+      <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+      <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+    </symbol>
+    <symbol id="collection" viewBox="0 0 16 16">
+      <path d="M2.5 3.5a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-11zm2-2a.5.5 0 0 1 0-1h7a.5.5 0 0 1 0 1h-7zM0 13a1.5 1.5 0 0 0 1.5 1.5h13A1.5 1.5 0 0 0 16 13V6a1.5 1.5 0 0 0-1.5-1.5h-13A1.5 1.5 0 0 0 0 6v7zm1.5.5A.5.5 0 0 1 1 13V6a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-.5.5h-13z"/>
+    </symbol>
+    <symbol id="calendar3" viewBox="0 0 16 16">
+      <path d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z"/>
+      <path d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+    </symbol>
+    <symbol id="cpu-fill" viewBox="0 0 16 16">
+      <path d="M6.5 6a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3z"/>
+      <path d="M5.5.5a.5.5 0 0 0-1 0V2A2.5 2.5 0 0 0 2 4.5H.5a.5.5 0 0 0 0 1H2v1H.5a.5.5 0 0 0 0 1H2v1H.5a.5.5 0 0 0 0 1H2v1H.5a.5.5 0 0 0 0 1H2A2.5 2.5 0 0 0 4.5 14v1.5a.5.5 0 0 0 1 0V14h1v1.5a.5.5 0 0 0 1 0V14h1v1.5a.5.5 0 0 0 1 0V14h1v1.5a.5.5 0 0 0 1 0V14a2.5 2.5 0 0 0 2.5-2.5h1.5a.5.5 0 0 0 0-1H14v-1h1.5a.5.5 0 0 0 0-1H14v-1h1.5a.5.5 0 0 0 0-1H14v-1h1.5a.5.5 0 0 0 0-1H14A2.5 2.5 0 0 0 11.5 2V.5a.5.5 0 0 0-1 0V2h-1V.5a.5.5 0 0 0-1 0V2h-1V.5a.5.5 0 0 0-1 0V2h-1V.5zm1 4.5h3A1.5 1.5 0 0 1 11 6.5v3A1.5 1.5 0 0 1 9.5 11h-3A1.5 1.5 0 0 1 5 9.5v-3A1.5 1.5 0 0 1 6.5 5z"/>
+    </symbol>
+    <symbol id="gear-fill" viewBox="0 0 16 16">
+      <path d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z"/>
+    </symbol>
+    <symbol id="speedometer" viewBox="0 0 16 16">
+      <path d="M8 2a.5.5 0 0 1 .5.5V4a.5.5 0 0 1-1 0V2.5A.5.5 0 0 1 8 2zM3.732 3.732a.5.5 0 0 1 .707 0l.915.914a.5.5 0 1 1-.708.708l-.914-.915a.5.5 0 0 1 0-.707zM2 8a.5.5 0 0 1 .5-.5h1.586a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 8zm9.5 0a.5.5 0 0 1 .5-.5h1.5a.5.5 0 0 1 0 1H12a.5.5 0 0 1-.5-.5zm.754-4.246a.389.389 0 0 0-.527-.02L7.547 7.31A.91.91 0 1 0 8.85 8.569l3.434-4.297a.389.389 0 0 0-.029-.518z"/>
+      <path fill-rule="evenodd" d="M6.664 15.889A8 8 0 1 1 9.336.11a8 8 0 0 1-2.672 15.78zm-4.665-4.283A11.945 11.945 0 0 1 8 10c2.186 0 4.236.585 6.001 1.606a7 7 0 1 0-12.002 0z"/>
+    </symbol>
+    <symbol id="toggles2" viewBox="0 0 16 16">
+      <path d="M9.465 10H12a2 2 0 1 1 0 4H9.465c.34-.588.535-1.271.535-2 0-.729-.195-1.412-.535-2z"/>
+      <path d="M6 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 1a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm.535-10a3.975 3.975 0 0 1-.409-1H4a1 1 0 0 1 0-2h2.126c.091-.355.23-.69.41-1H4a2 2 0 1 0 0 4h2.535z"/>
+      <path d="M14 4a4 4 0 1 1-8 0 4 4 0 0 1 8 0z"/>
+    </symbol>
+    <symbol id="tools" viewBox="0 0 16 16">
+      <path d="M1 0L0 1l2.2 3.081a1 1 0 0 0 .815.419h.07a1 1 0 0 1 .708.293l2.675 2.675-2.617 2.654A3.003 3.003 0 0 0 0 13a3 3 0 1 0 5.878-.851l2.654-2.617.968.968-.305.914a1 1 0 0 0 .242 1.023l3.356 3.356a1 1 0 0 0 1.414 0l1.586-1.586a1 1 0 0 0 0-1.414l-3.356-3.356a1 1 0 0 0-1.023-.242L10.5 9.5l-.96-.96 2.68-2.643A3.005 3.005 0 0 0 16 3c0-.269-.035-.53-.102-.777l-2.14 2.141L12 4l-.364-1.757L13.777.102a3 3 0 0 0-3.675 3.68L7.462 6.46 4.793 3.793a1 1 0 0 1-.293-.707v-.071a1 1 0 0 0-.419-.814L1 0zm9.646 10.646a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708zM3 11l.471.242.529.026.287.445.445.287.026.529L5 13l-.242.471-.026.529-.445.287-.287.445-.529.026L3 15l-.471-.242L2 14.732l-.287-.445L1.268 14l-.026-.529L1 13l.242-.471.026-.529.445-.287.287-.445.529-.026L3 11z"/>
+    </symbol>
+    <symbol id="chevron-right" viewBox="0 0 16 16">
+      <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+    </symbol>
+    <symbol id="geo-fill" viewBox="0 0 16 16">
+      <path fill-rule="evenodd" d="M4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999zm2.493 8.574a.5.5 0 0 1-.411.575c-.712.118-1.28.295-1.655.493a1.319 1.319 0 0 0-.37.265.301.301 0 0 0-.057.09V14l.002.008a.147.147 0 0 0 .016.033.617.617 0 0 0 .145.15c.165.13.435.27.813.395.751.25 1.82.414 3.024.414s2.273-.163 3.024-.414c.378-.126.648-.265.813-.395a.619.619 0 0 0 .146-.15.148.148 0 0 0 .015-.033L12 14v-.004a.301.301 0 0 0-.057-.09 1.318 1.318 0 0 0-.37-.264c-.376-.198-.943-.375-1.655-.493a.5.5 0 1 1 .164-.986c.77.127 1.452.328 1.957.594C12.5 13 13 13.4 13 14c0 .426-.26.752-.544.977-.29.228-.68.413-1.116.558-.878.293-2.059.465-3.34.465-1.281 0-2.462-.172-3.34-.465-.436-.145-.826-.33-1.116-.558C3.26 14.752 3 14.426 3 14c0-.599.5-1 .961-1.243.505-.266 1.187-.467 1.957-.594a.5.5 0 0 1 .575.411z"/>
+    </symbol>
+  </svg>
+
+           <!--main-->
+  <main>
+    <div class="b-example-divider"></div>
   
-    
-   <footer class="container py-5">
-      <div class="row">
-        <div class="col-12 col-md">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mb-2" role="img" viewBox="0 0 24 24"><title>Product</title><circle cx="12" cy="12" r="10"/><path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"/></svg>
-          <small class="d-block mb-3 text-body-secondary">&copy; 2017-2023</small>
+    <div class="container px-4 py-5" id="hanging-icons">
+      <h2 class="pb-2 border-bottom"><strong>CON STANLEY, HACES MEJOR TU TRABAJO</strong></h2>
+      <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+        <div class="col d-flex align-items-start">
+          <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+            <svg class="bi" width="1em" height="1em"><use xlink:href="#toggles2"/></svg>
+          </div>
+          <div>
+            <h3 class="fs-2 text-body-emphasis">MARCAS</h3>
+            <p><strong>Stanley Black & Decker es propietaria de las siguientes marcas</strong></p>
+              <ul><strong>
+                <li>Stanley</li>
+                <li>Black & Decker</li>
+                <li>Stanley Security Solutions</li>
+                <li>Stanley Security</li>
+                <li>DeWalt</li>
+                <li>Porter Cable</li>
+                <li>Delta Maquinaria</li>
+                <li>Kwikset</li>
+                <li>Baldwin</li>
+                <li>Weiser Lock</li>
+                <li>La Emhart Teknologies</li>
+                <li>Facom</li>
+                <li>USAG</li>
+                <li>Bost Garnache Industrias</li>
+                <li>Tona</li>
+                <li>Mac Tools</li>
+                <li>Proto</li>
+                <li>Pastorino</li>
+                <li>Molly</li>
+              </strong>
+              </ul>
+          </div>
         </div>
-        <div class="col-6 col-md">
-          <h5>Características</h5>
-          <ul class="list-unstyled text-small">
-            <li><a class="link-secondary text-decoration-none" href="#"> Cosas interesantes</a></li>
-            <li><a class="link-secondary text-decoration-none" href="#"> Función aleatoria</a></li>
-            <li><a class="link-secondary text-decoration-none" href="#">función de equipo</a></li>
-            <li><a class="link-secondary text-decoration-none" href="#"> Cosas para desarrolladores</a></li>
-            <li><a class="link-secondary text-decoration-none" href="#"> Otro</a></li>
-          </ul>
+        <div class="col d-flex align-items-start">
+          <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+            <svg class="bi" width="1em" height="1em"><use xlink:href="#cpu-fill"/></svg>
+          </div>
+          <div>
+            <h3 class="fs-2 text-body-emphasis">¿QUE ES STANLEY?</h3>
+            <p><strong>Stanley es una empresa con casi un siglo de historia, cuenta con un gran equipo de desarrollo y más de una centena de herramientas manuales y eléctricas que la han catapultado a formar parte de top 10 de mejores marcas de herramientas del mercado.
+
+              Si bien, lo anterior pudo haber contestado tu pregunta, si estas pensando en adquirir herramientas de esta marca, puede que necesites una respuesta más elaborada que te permita tomar una buena decisión al momento de gastar tu dinero, es por eso, que hoy intentaremos despejar tus dudas acerca de esta marca y sus herramientas.En el mundo de las herramientas es muy común apostar por las marcas de que le dan acceso a todo su catalogo sin la necesidad de tener que invertir meses y meses de salario en tener 4 o 5 herramientas, dígase un taladro, una sierra circular, una sierra caladora, un atornillador de impacto, etc.</strong></p>
+          </div>
         </div>
-        <div class="col-6 col-md">
-          <h5>Recursos</h5>
-          <ul class="list-unstyled text-small">
-            <li><a class="link-secondary text-decoration-none" href="#">Nuestros locales</a></li>
-            <li><a class="link-secondary text-decoration-none" href="#">Contacto</a></li>
-            <li><a class="link-secondary text-decoration-none" href="#">Servicios</a></li>
-            <li><a class="link-secondary text-decoration-none" href="#">Compañia</a></li>
-          </ul>
-        </div>
-        <div class="col-6 col-md">
-          <h5>Recursos</h5>
-          <ul class="list-unstyled text-small">
-            <li><a class="link-secondary text-decoration-none" href="#">Negocio</a></li>
-            <li><a class="link-secondary text-decoration-none" href="#"> Educación</a></li>
-            <li><a class="link-secondary text-decoration-none" href="#">Gobierno</a></li>
-          </ul>
-        </div>
-        <div class="col-6 col-md">
-          <h5>Acerca de</h5>
-          <ul class="list-unstyled text-small">
-            <li><a class="link-secondary text-decoration-none" href="#">Equipo</a></li>
-            <li><a class="link-secondary text-decoration-none" href="#">Ubicaciones</a></li>
-            <li><a class="link-secondary text-decoration-none" href="#">Privacidad</a></li>
-            <li><a class="link-secondary text-decoration-none" href="#"> Términos</a></li>          
-          </ul>
+        <div class="col d-flex align-items-start">
+          <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+            <svg class="bi" width="1em" height="1em"><use xlink:href="#tools"/></svg>
+          </div>
+          <div>
+            <h3 class="fs-2 text-body-emphasis">COMIENZOS DE LA MARCA</h3>
+            <p><strong>Stanley Works nació como resultado directo de la fusión en 1920 de Stanley's Bolt Manufactory (fundada por Frederick Trent Stanley en 1843) y Stanley Rule and Level Companey1​(fundada por el primo de Frederick, Henry Stanley, en 1857).
+
+              De hecho durante la Segunda Guerra Mundial, Stanley Works recibió el premio "Army-Navy 'E' Award" por su excelencia en la producción bélica.[7]
+              
+              
+              Premio WWII Army-Navy Production para Stanley Works,. 20 de enero de 1943
+              En mayo de 2002, la empresa consideró trasladar su sede corporativa a las Bermudas, pero la protesta pública y gubernamental obligó a la gerencia a reconsiderar la mudanza. Para agosto de 2002, la empresa había decidido mantener su incorporación en los Estados Unidos.</strong>
+  
+          </div>
         </div>
       </div>
-    </footer>
+    </div>
+  
+    <div class="b-example-divider"></div>
+  
+    <div class="container px-4 py-5" id="icon-grid">
+      <h2 class="pb-2 border-bottom"></h2>
+  
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
+        <div class="col d-flex align-items-start">
+          <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#bootstrap"/></svg>
+          <div>
+            <h3 class="fw-bold mb-0 fs-4 text-body-emphasis"><strong>HERRAMIENTAS PROFESIONALES</strong></h3>
+            <p>En STANLEY® diseñamos y fabricamos herramientas resistentes y confiables para que en cada proyecto puedas hacer tu mejor obra sin importar el desafío.</p>
+          </div>
+        </div>
+        <div class="col d-flex align-items-start">
+          <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#cpu-fill"/></svg>
+          <div>
+            <h3 class="fw-bold mb-0 fs-4 text-body-emphasis"><stron>GENERALISTA</stron></h3>
+            <p>Para un profesional es importante contar con una variedad de herramientas que aseguren la calidad de su trabajo.</p>
+          </div>
+        </div>
+        <div class="col d-flex align-items-start">
+          <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#calendar3"/></svg>
+          <div>
+            <h3 class="fw-bold mb-0 fs-4 text-body-emphasis"><strong>MECÁNICA</strong></h3>
+            <p>Para un profesional es importante contar con una variedad de herramientas que aseguren la calidad de su trabajo.</p>
+          </div>
+        </div>
+        <div class="col d-flex align-items-start">
+          <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#toggles2"/></svg>
+          <div>
+            <h3 class="fw-bold mb-0 fs-4 text-body-emphasis"><strong>REGISTRA TU PRODUCTO</strong></h3>
+            <p>Registra todas tus herramientas STANLEY aquí.</p>
+          </div>
+        </div>
+        <div class="col d-flex align-items-start">
+          <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#geo-fill"/></svg>
+          <div>
+            <h3 class="fw-bold mb-0 fs-4 text-body-emphasis"><strong>DONDE COMPRAR</strong></h3>
+            <p>Los productos STANLEY están disponibles en línea y en minoristas en todo el país. Encontrá la tienda más cercana..</p>
+          </div>
+        </div>
+        <div class="col d-flex align-items-start">
+          <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#tools"/></svg>
+          <div>
+            <h3 class="fw-bold mb-0 fs-4 text-body-emphasis"><strong>CENTRO DE SERVICIOS</strong></h3>
+            <p>Busca tu centro de servicio más cercano.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="b-example-divider"></div>
+  
+    <div class="container px-4 py-5">
+      <h2 class="pb-2 border-bottom">Features with title</h2>
+  
+      <div class="row row-cols-1 row-cols-md-2 align-items-md-center g-5 py-5">
+        <div class="col d-flex flex-column align-items-start gap-2">
+          <h2 class="fw-bold text-body-emphasis"><strong>CON STANLEY, HACÉ TU MEJOR OBRA
+            SOLUCIONES POR PROFESIÓN</strong></h2>
+          <p class="text-body-secondary">STANLEY® cuenta con todo tipo de herramientas eléctricas, manuales y accesorios para tus proyectos. Las herramientas STANLEY están diseñadas para brindar el mejor rendimiento para el profesional, contando con un portafolio completo para cada especialista.</p>
+          <h5><strong>Proba las mejores herramientas del mercado<br>COMPRA YA!</br></strong></h5>
+          <a href="../html/catalogo.html" class="btn btn-primary btn-lg">COMPRA AQUI</a>
+        </div>
+  
+        <div class="col">
+          <div class="row row-cols-1 row-cols-sm-2 g-4">
+            <div class="col d-flex flex-column gap-2">
+              <div class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
+                <svg class="bi" width="1em" height="1em">
+                  <use xlink:href="#collection" />
+                </svg>
+              </div>
+              <h4 class="fw-semibold mb-0 text-body-emphasis"><strong>Registra tu producto</strong></h4>
+              <p class="text-body-secondary">Podes guardar productos o agregarlos a tu carrito para realizar una compra 100% efectiva.</p>
+            </div>
+  
+            <div class="col d-flex flex-column gap-2">
+              <div class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
+                <svg class="bi" width="1em" height="1em">
+                  <use xlink:href="#gear-fill" />
+                </svg>
+              </div>
+              <h4 class="fw-semibold mb-0 text-body-emphasis"><strong>Consejos utiles</strong></h4>
+              <p class="text-body-secondary">Podes consultarnos las 24 hs del dia !</p>
+            </div>
+  
+            <div class="col d-flex flex-column gap-2">
+              <div class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
+                <svg class="bi" width="1em" height="1em">
+                  <use xlink:href="#speedometer" />
+                </svg>
+              </div>
+              <h4 class="fw-semibold mb-0 text-body-emphasis"><strong>Garantia</strong></h4>
+              <p class="text-body-secondary">Si tenes algun inconveniente con nuestros productos no dudes en consultarnos.</p>
+            </div>
+  
+            <div class="col d-flex flex-column gap-2">
+              <div class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
+                <svg class="bi" width="1em" height="1em">
+                  <use xlink:href="#table" />
+                </svg>
+              </div>
+              <h4 class="fw-semibold mb-0 text-body-emphasis"><strong>Enterate de todo lo nuevo</strong></h4>
+              <p class="text-body-secondary">Dejanos tus datos y no te pierdas las grandes ofertas que lanzamos dia a dia.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <!--termina el main-->
+  <footer class="container py-5">
+    <div class="row">
+      <div class="col-12 col-md">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mb-2" role="img" viewBox="0 0 24 24"><title>Product</title><circle cx="12" cy="12" r="10"/><path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"/></svg>
+        <small class="d-block mb-3 text-body-secondary">&copy; 2017-2023</small>
+      </div>
+      <div class="col-6 col-md">
+        <h5>Características</h5>
+        <ul class="list-unstyled text-small">
+          <li><a class="link-secondary text-decoration-none" href="#">Cosas interesantes</a></li>
+          <li><a class="link-secondary text-decoration-none" href="#">Función aleatoria</a></li>
+          <li><a class="link-secondary text-decoration-none" href="#">Función de equipo</a></li>
+          <li><a class="link-secondary text-decoration-none" href="#">Cosas para desarrolladores</a></li>
+          <li><a class="link-secondary text-decoration-none" href="#">Otro</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-md">
+        <h5>Recursos</h5>
+        <ul class="list-unstyled text-small">
+          <li><a class="link-secondary text-decoration-none" href="#">Visitanos</a></li>
+          <li><a class="link-secondary text-decoration-none" href="#">Historia</a></li>
+          <li><a class="link-secondary text-decoration-none" href="#">Anotaciones</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-md">
+        <h5>Recursos</h5>
+        <ul class="list-unstyled text-small">
+          <li><a class="link-secondary text-decoration-none" href="#">Negocio</a></li>
+          <li><a class="link-secondary text-decoration-none" href="#">Educación</a></li>
+          <li><a class="link-secondary text-decoration-none" href="#">Gobierno</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-md">
+        <h5>Acerca de</h5>
+        <ul class="list-unstyled text-small">
+          <li><a class="link-secondary text-decoration-none" href="#">Equipo</a></li>
+          <li><a class="link-secondary text-decoration-none" href="#">Ubicaciones</a></li>
+          <li><a class="link-secondary text-decoration-none" href="#">Privacidad</a></li>
+          <li><a class="link-secondary text-decoration-none" href="#">Términos</a></li>          
+        </ul>
+      </div>
+    </div>
+  </footer>
+  
+
+    
 
 
 
-
-
-
-
-
- </body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
 </html>
